@@ -1,0 +1,383 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Comfy Kitchen</title>
+    
+    
+    <style>
+        #home,#employees,#products,#contact{
+            background: none;
+            border: none;
+            color: white;
+            font-size: 150%;
+            font-weight: bold;
+
+            
+        }
+        #meny{
+            transition: 1s;
+        }
+        #contact{
+            position: absolute;
+            top: 2%;
+            left: 23%;
+        }
+        #products{
+            position: absolute;
+            top: 2%;
+            left: 15%;
+
+        } #employees{
+            position: absolute;
+            top: 2%;
+            left: 6%;
+        } #home{
+            position: absolute;
+            top: 2%;
+            left: 1%;
+            color:#E3E326;
+        }
+        #border{
+            border-bottom: 5px black solid;
+            border-top: 5px black solid;
+            height: 6%;
+            width: 100%;
+            top: 0%;
+            left: 0%;
+            position: absolute;
+           background-color: black;
+        }
+        #logo{
+            position: absolute;
+            right: 50%;
+            top: 7%;
+            transition: 1s;    
+        }  
+        
+        #logo2{
+            position: absolute;
+            right: 49%;
+            top: 28%;   
+            transition: 1s;
+        }
+        #tekstH{
+            position: absolute;
+            top: 40%;
+            font-size: 200%;
+            left: 35%;
+            transition: 1s;
+            
+        }
+       
+        #pic{
+            position: absolute;
+            top: 37%;
+            left: 30%;
+            border: solid;
+        }#pic2{
+            position: absolute;
+            top: 67%;
+            left: 30%;
+            border: solid;
+        }#pic3{
+            position: absolute;
+            top: 37%;
+            left: 45%;
+            border: solid;
+        }#pic4{
+            position: absolute;
+            top: 67%;
+            left: 30%;
+            border: solid;
+        }
+        
+        #oro{
+            position: absolute;
+            top: 57%;
+            font-size: 110%;
+            left: 32%;
+        }#astrid{
+            position: absolute;
+            top: 87%;
+            font-size: 110%;
+            left: 47%;
+        }#magnus{
+            position: absolute;
+            top: 57%;
+            font-size: 110%;
+            left: 47%;
+        }#vincent{
+            position: absolute;
+            top: 87%;
+            font-size: 110%;
+            left: 32%;
+        }
+        
+        
+        #employeestxt{
+            opacity:0;
+            transition: 1s;
+        }
+        #astridcv{
+            opacity: 1;
+            position: absolute;
+            left: 30%;
+            border: solid;
+            top: -100%;
+            height: 80%;
+            transition: 2s;
+        }
+        #orocv{
+            position: absolute;
+            left: 30%;
+            height: 80%;
+            opacity: 1;
+            border: solid;
+            top: -100%;
+            transition: 2s;
+        }
+        #magnuscv{
+            position: absolute;
+            left: 30%;
+            border: solid;
+            top: -100%;
+            opacity: 1;
+            height: 80%;
+            transition: 2s;
+
+        }
+        #vincentcv{
+            position: absolute;
+            left: 30%;
+            border: solid;
+            top: -100%;
+            opacity: 1;
+            height: 80%;
+            transition: 2s;
+            
+        }
+    
+        
+        #exit{
+            position: absolute;
+            background: #E3E326;
+            top: 92%;
+            left: 42%;
+            border: none;
+            font-size: 120%;
+            transition: 4s;
+            opacity: 0;
+        }
+        #productsBilde{
+            position: absolute;
+            top: 60%;
+            left: 38%;
+            width: 40%;
+            opacity: 0;
+            transition: 2s;
+            
+        }
+        #form{
+            transition: 2s;
+            position: absolute;
+            top: 60%;
+            left: 40%;
+            opacity: 0;
+        }
+        #submitB{
+            position: absolute;
+            left: 35%;
+        }
+
+     
+    </style>
+    
+</head>
+
+<body> 
+    
+      <div id="border"> </div>
+      <input type="image" src="Comfylogo.png" id="logo" height="20%">
+    <img src="comfykitchen.PNG" id="logo2" height="9%">
+   
+    <div id="meny">
+     <button id="home">HOME</button>
+     <button id="employees">EMPLOYEES</button>
+     <button id="products">PRODUCTS</button>
+     <button id="contact">CONTACT</button>
+    </div>
+    <button id="exit"> EXIT </button>
+    <div id="tekstH">It is not unusual that students <br> can be very lazy when it comes to cooking.<br> It is not entirely their fault though <br> etc etc ..........</div>
+    <div id="employeestxt">
+    <p id="oro">Oroshan Hadzjaev</p>
+    <p id="astrid">Astrid Pettersen</p>
+    <p id="magnus">Magnus Lenvik</p>
+    <p id="vincent">Vincent Quach</p>
+    <input type="image" src="pic.jpg" id="pic"  width="10%" value="0" disabled="true">
+    <input type="image" src="pic.jpg" id="pic2"  width="10%" value="1" disabled="true">
+    <input type="image" src="pic.jpg" id="pic3"  width="10%" value="2" disabled="true">
+    <input type="image" src="pic.jpg" id="pic4"  width="10%" value="3" disabled="true">
+    </div>
+    <div id="cv">
+    
+        <img src="astrid.PNG" id="astridcv">
+        <img src="oro.PNG" id="orocv">
+        <img src="magnus.PNG" id="magnuscv">
+        <img src="vincent.PNG" id="vincentcv">
+        
+    </div>
+    <p id="productsBilde">THERE WILL BE PRODUCTS HERE <br>THERE WILL BE PRODUCTS HERE <br> THERE WILL BE PRODUCTS HERE </p>>
+    
+    <form id="form">
+  <label for="fname">Your name:</label><br>
+  <input type="text" id="name" name="name" disabled = "true"><br>
+  <label for="lname">Email:</label><br>
+  <input type="text" id="email" name="email" disabled = "true"><br><br>
+        <label for="lname">Your message:</label><br>
+  <input type="text" id="message" name="message" disabled = "true"><br><br>
+  <input type="submit" value="Submit" id="submitB"disabled = "true">
+</form> 
+    
+    
+  <script>
+       
+      var indeks = 0;
+      var cv1 = document.getElementById("orocv");
+      var cv2 = document.getElementById("astridcv");
+      var cv3 = document.getElementById("magnuscv");
+      var cv4 = document.getElementById("vincentcv");
+      var Cver = [cv1,cv2,cv3,cv4];
+    
+   logo.onclick = home.onclick = function Home(){
+        	document.getElementById("home").style.color = '#E3E326';
+            document.getElementById("contact").style.color = 'white';
+            document.getElementById("products").style.color = 'white';
+            document.getElementById("employees").style.color = 'white';
+            employeestxt.style.opacity = 0;
+            tekstH.style.opacity = 1;
+            document.getElementById("pic").disabled = true;
+        document.getElementById("pic2").disabled = true;
+        document.getElementById("pic3").disabled = true;
+        document.getElementById("pic4").disabled = true;
+        productsBilde.style.opacity= 0;
+        form.style.opacity = 0;
+        document.getElementById("name").disabled = true;
+        document.getElementById("email").disabled = true;
+        document.getElementById("message").disabled = true;
+        document.getElementById("submitB").disabled = true;
+
+
+
+        
+    }
+    employees.onclick = function Employees2(){
+        	document.getElementById("employees").style.color = '#E3E326';
+            document.getElementById("home").style.color = 'white';
+            document.getElementById("products").style.color = 'white';
+            document.getElementById("contact").style.color = 'white';
+            employeestxt.style.opacity = 1;
+            tekstH.style.opacity = 0;
+        document.getElementById("pic").disabled = false;
+        document.getElementById("pic2").disabled = false;
+        document.getElementById("pic3").disabled = false;
+        document.getElementById("pic4").disabled = false;
+                productsBilde.style.opacity= 0;
+                form.style.opacity = 0;
+         document.getElementById("name").disabled = true;
+        document.getElementById("email").disabled = true;
+        document.getElementById("message").disabled = true;
+        document.getElementById("submitB").disabled = true;
+
+
+
+        
+        
+    }
+    products.onclick = function Products(){
+        	document.getElementById("products").style.color = '#E3E326';
+            document.getElementById("home").style.color = 'white';
+            document.getElementById("contact").style.color = 'white';
+            document.getElementById("employees").style.color = 'white';
+        document.getElementById("pic").disabled = true;
+        document.getElementById("pic2").disabled = true;
+        document.getElementById("pic3").disabled = true;
+        document.getElementById("pic4").disabled = true;
+         tekstH.style.opacity = 0;
+        productsBilde.style.opacity= 1;
+                    employeestxt.style.opacity = 0;
+                form.style.opacity = 0;
+         document.getElementById("name").disabled = true;
+        document.getElementById("email").disabled = true;
+        document.getElementById("message").disabled = true;
+        document.getElementById("submitB").disabled = true;
+
+
+
+    }
+    contact.onclick = function Contact(){
+        document.getElementById("contact").style.color = '#E3E326';
+        document.getElementById("home").style.color = 'white';
+        document.getElementById("products").style.color = 'white';
+        document.getElementById("employees").style.color = 'white';
+        document.getElementById("pic").disabled = true;
+        document.getElementById("pic2").disabled = true;
+        document.getElementById("pic3").disabled = true;
+        document.getElementById("pic4").disabled = true;
+         tekstH.style.opacity = 0;
+                        productsBilde.style.opacity= 0;
+                    employeestxt.style.opacity = 0;
+        form.style.opacity = 1;
+         document.getElementById("name").disabled = false;
+        document.getElementById("email").disabled = false;
+        document.getElementById("message").disabled = false;
+        document.getElementById("submitB").disabled = false;
+
+
+        
+    }
+    function cvShow(evt){
+        indeks = Number(evt.target.value);
+        Cver[indeks].style.top = 10 + '%';
+        employeestxt.style.opacity = 0;
+        document.getElementById("pic").disabled = true;
+        document.getElementById("pic2").disabled = true;
+        document.getElementById("pic3").disabled = true;
+        document.getElementById("pic4").disabled = true;
+        document.getElementById("home").disabled = true;
+        document.getElementById("employees").disabled = true;
+        document.getElementById("products").disabled = true;
+        document.getElementById("contact").disabled = true;
+        document.getElementById("exit").disabled = false;
+        meny.style.opacity = 0;
+        logo.style.opacity = 0;
+        logo2.style.opacity = 0;
+        exit.style.opacity = 1;
+
+        
+    }
+      pic2.onclick = pic3.onclick = pic4.onclick =  pic.onclick = cvShow;
+      
+      exit.onclick = function(evt){
+          
+        Cver[indeks].style.top = -100 + '%';
+          document.getElementById("pic").disabled = false;
+        document.getElementById("pic2").disabled = false;
+        document.getElementById("pic3").disabled = false;
+        document.getElementById("pic4").disabled = false;
+        document.getElementById("home").disabled = false;
+        document.getElementById("employees").disabled = false;
+        document.getElementById("products").disabled = false;
+        document.getElementById("contact").disabled = false;
+           meny.style.opacity = 1;
+        logo.style.opacity = 1;
+        logo2.style.opacity = 1;
+        exit.style.opacity = 0;
+          employeestxt.style.opacity = 1;
+      }
+     
+    </script>
+    
+</body>
+</html>
